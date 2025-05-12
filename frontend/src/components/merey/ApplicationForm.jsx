@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ApplicationForm.css";
+import { Link } from "react-router-dom";
 
 const ApplicationForm = () => {
   const [formData, setFormData] = useState({
@@ -43,7 +44,7 @@ const ApplicationForm = () => {
         <div className="logo">VolunBee</div>
         <nav>
           <a href="#">Events</a>
-          <a href="#">My Profile</a>
+          <Link to="/profile" className="nav-link">My Profile</Link>
           <a href="#">About</a>
         </nav>
       </header>

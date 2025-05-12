@@ -1,12 +1,17 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ApplicationForm from "./components/merey/ApplicationForm";
+import VolunteerProfilePage from "./components/merey/VolunteerProfilePage";
 
 function App() {
   return (
-    <div className="App">
-      <ApplicationForm />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<ApplicationForm />} />
+        <Route path="/profile" element={<VolunteerProfilePage />} />
+      </Routes>
+    </Router>
   );
 }
 
