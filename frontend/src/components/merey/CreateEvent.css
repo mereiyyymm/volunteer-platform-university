@@ -16,6 +16,32 @@
   padding: 60px 20px;
 }
 
+.top-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #6B4DE6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  color: white;
+}
+
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-link {
+  margin-left: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+}
+
 .event-form {
   background: white;
   padding: 40px;

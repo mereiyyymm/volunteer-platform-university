@@ -1,8 +1,22 @@
 import React from "react";
 import "./VolunteerProfilePage.css";
+import { Link } from "react-router-dom";
+
 
 const VolunteerProfilePage = () => {
   return (
+    <>
+    <header className="top-bar">
+  <div className="logo">VolunBee</div>
+  <nav>
+    <Link to="/" className="nav-link">Application</Link>
+    <Link to="/create" className="nav-link">Create Event</Link>
+    <Link to="/profile" className="nav-link">My Profile</Link>
+    <span className="nav-link">About</span>
+  </nav>
+</header>
+
+
     <div className="profile-page">
       <div className="profile-card">
         <div className="sidebar">
@@ -89,6 +103,7 @@ const VolunteerProfilePage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

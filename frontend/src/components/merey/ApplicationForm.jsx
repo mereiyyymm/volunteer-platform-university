@@ -44,6 +44,7 @@ const ApplicationForm = () => {
         <div className="logo">VolunBee</div>
         <nav>
           <a href="#">Events</a>
+           <Link to="/" className="nav-link">Application</Link>
            <Link to="/create" className="nav-link">Create Event</Link>
            <Link to="/profile" className="nav-link">My Profile</Link>
           <a href="#">About</a>
